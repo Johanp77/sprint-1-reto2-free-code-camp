@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=PT+Serif:ital@1&family=Rubik+Beastly&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de encuesta</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        form{
+            background-color: white;
+            border-radius: 3px;
+            color: #999;
+            font-size: 0.8em;
+            padding: 20px;
+            margin: 0 auto;
+            width: 700px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        
+    </header>
+
+    <main>
+        <section>
+            <form class="description" id="survey-form">
+                <div class="big-content">
+                    <h1 class="titulo" id="title">Encuesta de satisfacción</h1>
+                    <p class="description-p" id="description">En esta encuesta podremos conocer tu grado de satisfacción con nuestros productos</p>
+                    <div class="div-form-name">
+                        <label id="name-label"for="name"> ingresa tu nombre</label>
+                        <input type="Text" name="name" placeholder="Enter Your Name" class="Name size" id="name" required />
+                    </div>
+                    <div class="div-form-email">
+                        <label id="email-label" for="email">ingresa tu email</label>
+                        <input type="email" name="email" placeholder="Enter Your email" class="email size" id="email" required />
+                    </div>
+                    <div class="div-form-number">
+                        <label id="number-label" for="number">Ingresa tu numero de telefono (opcional)</label>
+                        <input type="number" name="number"placeholder="Enter Your Phone Number (optional)" class="number size"
+                            id="number" min="1" max="10" />
+                    </div>
+                    <div class="div-form-selector1">
+                        <p>Elige una ciudad</p>
+                        <select name="pelicula" id="dropdown" class="selector-1 size">
+                            <option value="Escoge una opción">Escoge una opción</option>
+                            <option value="Bogotá">Bogotá</option>
+                            <option value="Medellín">Medellín</option>
+                            <option value="Cali">Cali</option>
+                            <option value="Pasto">Pasto</option>
+                            <option value="Prefiero no responder">Prefiero no responder</option>
+                        </select>
+                    </div>
+                    <div class="div-form-radius">
+                        <p>¿Recomendarías nuestros servicios a otra persona? </p>
+                        <label>
+                            <input value="hola" name="btn" type="radio">Si
+                        </label>
+                        <label>
+                            <input value="hola" name="btn" type="radio">Tal vez
+                        </label>
+                        <label>
+                            <input value="hola" name="btn" type="radio">No
+                        </label>
+                    </div>
+
+                    <div class="div-form-selector2">
+                        <p></p>
+                        <select name="categoria" id="categoria" class="selector-2 size">
+                            <option value="Escoge una opción">Escoge una opción</option>
+                            <option value="Buen Servicio">Buen Servicio</option>
+                            <option value="Entregas rapidas">Entregas rápidas</option>
+                            <option value="Atención al cliente">Atención al cliente</option>
+                        </select>
+                    </div>
+
+                    <div class="div-form-checkbox">
+                        <p>Seleccione</p>
+                        <label>
+                            <input value="hola" class="" type="checkbox"> Enviar mis datos personales
+                        </label>
+                        <label>
+                            <input value="hola" class="" type="checkbox" required> Acepto los términos y condiciones
+                        </label>
+                        <label>
+                            <input value="hola" class="" type="checkbox"> Suscribirme al boletín de noticias
+                        </label>
+                        <label>
+                            <input value="hola" class="" type="checkbox"> Recibir ofertas promocionales
+                        </label>
+                        <label>
+                            <input value="hola" class="" type="checkbox"> Recibir una llamada de servicio al cliente
+                        </label>
+                    </div>
+
+                    <div class="contenedor-area">
+                        <p>Algún comentario o sugerencia para mejorar nuestra encuesta?</p>
+
+                        <form action="">
+                            <textarea name="Comentario" class="textarea" autofocus placeholder="Comentario" cols="30"
+                                rows="10"></textarea>
+                        </form>
+                    </div>
+
+                    <div class="last-p">
+                        <button class="submit" id="submit">Enviar comentarios y salir  </button>
+                    </div>
+
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
